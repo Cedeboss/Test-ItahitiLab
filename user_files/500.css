@@ -1,0 +1,346 @@
+#parentDepartmentsContainer {
+    background: none;
+    border: none;
+    padding: 0;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.list-group-sortable {
+    margin: 0;
+}
+
+
+.panel-body-sortable {
+    padding: 0 0;
+    display: none;
+}
+
+.list-group-item-sortable {
+    width: 100%;
+}
+
+.panel-heading-sortable {
+    background: #2F3646 !important;
+    color: #FFFFFF !important;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sort-parent-department-name {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.glyphicon-sortable {
+    font-size: 20px;
+    padding: 5px;
+}
+
+.glyphicon-sortable[class*="chevron"] {
+    margin-left: auto;
+}
+
+.sort-sub-department-name {
+    font-size: 14px;
+    color: #333333;
+    text-transform: uppercase;
+}
+
+.parent-department {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.sortable-ghost {
+    background: rgba(64, 185, 60, 0.75);
+}
+
+.sortable-drag .glyphicon-move{
+    opacity: 0;
+}
+
+.close-session-form .form-group {
+    background: #f0f0f0;
+}
+
+.close-session-form .form-group:nth-last-child(3) {
+    padding-left: 20px;
+}
+
+.warning-session{
+    background:#E35D4F;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.reset-stock-form label, input[type=checkbox] {
+    padding: 0;
+    margin: 0;
+}
+
+.reset-stock-form label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.reset-stock-form li {
+    list-style: none;
+}
+
+.reset-stock-form ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.reset-stock-form .department-checkbox {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border-radius: 5px;
+    border: 2px solid;
+    position: relative;
+    transition: background-color 0.4s;
+}
+
+.reset-stock-form .parent-department-checkbox {
+    border-color: #FFFFFF;
+    background-color: #2F3646;
+}
+
+.reset-stock-form input[type=checkbox]:checked ~ .department-checkbox {
+    background-color: #FFFFFF;
+}
+
+
+.reset-stock-form .department-checkbox::after {
+    content: '';
+    position: absolute;
+    width: 7px;
+    height: 13px;
+    border-right: 3px solid #40B93C;
+    border-bottom: 3px solid #40B93C;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateZ(40deg) scale(1.5);
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+
+.reset-stock-form input[type=checkbox]:checked ~ .department-checkbox:after {
+    opacity: 1;
+    transform: translate(-50%, -50%) rotateZ(40deg) scale(1);
+}
+
+
+.reset-stock-form .parent-department {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.reset-stock-form .parent-department-name {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.reset-stock-form .sub-department-name {
+    font-size: 14px;
+    color: #333333;
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+
+.reset-stock-form .panel-body {
+    padding: 0 0;
+}
+
+
+.reset-stock-form .panel-heading-reset {
+    background: #2F3646 !important;
+    color: #FFFFFF !important;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 10px 15px;
+}
+
+
+.reset-stock-form .sub-department {
+    margin-bottom: -1px;
+    background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    display: flex;
+    padding: 10px 15px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.reset-stock-form .sub-department:hover {
+    background-color: #DDDDDD;
+}
+
+.reset-stock-form input[type="checkbox"]:checked + label {
+    background: none;
+}
+
+.reset-stock-form input[type="checkbox"]:checked + .sub-department-name {
+    color: #333333;
+}
+
+.reset-stock-form .glyphicon {
+    font-size: 20px;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: 15px;
+}
+
+.reset-stock-form .panel-heading-reset-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFFFFF;
+    background-color: #2F3646;
+    cursor: pointer;
+}
+
+.reset-stock-form .main-department-label {
+    margin: 30px 15px;
+}
+
+
+.page-header-title > h1{
+    display: inline-block;
+    width: 100%;
+}
+
+.btn-up{
+    margin-top: 10px;
+}
+
+.breadcrumb-container{
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    max-height: 102px;
+}
+
+.breadcrumb-container .breadcrumb{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.top-buttons{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.top-switch-language-button, .top-help-button{
+    padding: 10px;
+    width: auto;
+}
+
+.top-help-button .help-link{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+}
+
+.departments-view-alerts{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.stick-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+
+.export-broken-container{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: 20px!important;
+}
+
+.export-broken-container-time-select-container{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.stick-index-prices{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.reception-check-container{
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+}
+
+.block-export-unknowns-500-container{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.block-export-unknowns-500{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.unknows-500-form{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media screen and (min-width: 576px){
+    .top-help-button .help-link{
+        flex-direction: row;
+    }
+
+    .top-help-button .help-link .wektoo-menuEditor{
+        padding-left: 5px;
+    }
+}
+
+
+@media screen and (min-width: 992px){
+    .stick-container, .reception-check-container,.block-export-unknowns-500-container{
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .breadcrumb-container{
+        max-height: 140px;
+    }
+}

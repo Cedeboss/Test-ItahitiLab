@@ -1,0 +1,38 @@
+#bann{
+float : left;
+width : 20%;
+margin : 0 0 0 0;
+
+}
+
+#bann .list-group-item{
+    background-color: rgba(47,54,70,255)
+    ;
+    color:rgb(231, 228, 228);
+    float : left;
+    height : 50%;
+    margin : 0 0 0 2%0;
+    padding: 20px 10px;
+    
+    }
+
+#rouge{
+    background-color:rgba(227,93,79,255);
+
+}
+#bleu{
+    background-color: rgba(116,179,173,255)
+    ;
+
+}
+#orange{
+    background-color: rgba(242,160,61,255)
+    ;
+
+}
+
+ .card{
+    text-align: center;
+    
+}
+                
